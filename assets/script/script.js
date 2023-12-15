@@ -1,7 +1,7 @@
 const toggleIcon = document.querySelector('.toggle-icon');
 
 
-/* Texto Animado */
+/*========texto animado =========*/
 
 const text = document.querySelector(".text-animation");
 
@@ -20,10 +20,27 @@ const textLoad = () => {
 textLoad();
 setInterval(textLoad, 12000);
 
-/* Final Texto Animado */
+/*======== menu icon navbar =========*/
 
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+
+}
+
+
+/*=========== sticky navbar ==========*/
 window.onscroll = () => {
-    const header = document.querySelector('.header');
+    let header = document.querySelector('.header');
 
     header.classList.toggle('sticky', window.scrollY > 100);
+
+
+    /*======== remove menu icon navbar =========*/
+
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 };
