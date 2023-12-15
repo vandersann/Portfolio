@@ -7,7 +7,7 @@ const text = document.querySelector(".text-animation");
 
 const textLoad = () => {
     setTimeout(() => {
-        text.textContent = "Developer Frontend"
+        text.textContent = "Dev. Frontend"
     }, 0);
     setTimeout(() => {
         text.textContent = "Ui Desingner"

@@ -535,9 +535,8 @@ footer .footer-current {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 46%;
     flex-direction: column;
-    margin-left: 2rem;
 }
 
 .footer-current img {
@@ -597,8 +596,8 @@ footer .footer-current {
 
 footer p {
     width: 100%;
-    text-align: center;
-    padding-left: 20%;
+    text-align: justify;
+    padding-left: 14rem;
 }
 
 .footer-icontop {
@@ -606,8 +605,7 @@ footer p {
     align-items: end;
     justify-content: end;
     flex-direction: row-reverse;
-    width: 90%;
-    padding-right: 2rem;
+    padding-right: 3rem;
 }
 
 .footer-icontop a {
@@ -713,7 +711,7 @@ footer p {
     }
 
     .footer-current ul li a {
-        display: inline;
+        margin-top: 0;
     }
 
 }
@@ -794,7 +792,7 @@ footer p {
     }
 
     .home .home-content .profession .text {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .about {
@@ -828,6 +826,18 @@ footer p {
 
 @media (max-width: 617px) {
 
+    section {
+        padding: 10rem 7% 1rem;
+    }
+
+    .header {
+        padding-top: 4rem;
+    }
+
+    .separador {
+        left: 19px;
+    }
+
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
     }
@@ -839,12 +849,28 @@ footer p {
         font-size: 50%;
     }
 
-    #darkMode-icon {
-        right: 6rem;
+    .home {
+        padding: 15rem 3% 0;
     }
 
-    .home {
-        padding: 0 3% 30rem;
+    .separador {
+        left: 6rem;
+        bottom: -4rem;
+    }
+
+    #darkMode-icon {
+        right: 7rem;
+    }
+
+    .services .services-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact form .input-box input {
+        width: 100%;
     }
 
 }
+
+@media (max-width: 365px) {}
