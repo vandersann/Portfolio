@@ -44,3 +44,12 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
+
+
+
+/*=========== dark mode ==========*/
+let dakModeIcon = document.querySelector('#darkMode-icon');
+
+darkModeIcon.onclick = () => {
+    darkModeIcon.classList.toggle('bx-sun');
+};
