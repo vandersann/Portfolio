@@ -48,8 +48,46 @@ window.onscroll = () => {
 
 
 /*=========== dark mode ==========*/
-let dakModeIcon = document.querySelector('#darkMode-icon');
+let darkModeIcon = document.querySelector('#darkMode-icon');
+let logoSan = document.getElementById('logoSan');
+
+let imgWhite = '/assets/images/logo.png';
+let imgDark = '/assets/images/sandino6.png';
+
+function imageChange() {
+    document.getElementById('logoSan').src = imgWhite;
+    let aux = imgWhite;
+    imgWhite = imgDark;
+    imgDark = aux;
+}
+
 
 darkModeIcon.onclick = () => {
     darkModeIcon.classList.toggle('bx-sun');
+    document.body.classList.toggle('dark-mode');
+    // logoSan.src = "/assets/images/logo.png";
+    imageChange();
+
 };
+
+
+/*=========== scroll reveal ==========*/
+ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.home-content, .heading', {
+    origin: 'top'
+});
+ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', {
+    origin: 'bottom'
+});
+ScrollReveal().reveal('.home-content h1, .about-img img', {
+    origin: 'left'
+});
+ScrollReveal().reveal('.home-content h3, .home-content p, .text-animation, .about-content', {
+    origin: 'right'
+});
