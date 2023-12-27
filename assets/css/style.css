@@ -65,6 +65,10 @@ section {
     color: var(--text-color);
 }
 
+.dark-mode .logo {
+    margin-top: 1rem;
+}
+
 .header.sticky #darkMode-icon {
     color: var(--text-color);
     opacity: .9;
@@ -124,6 +128,10 @@ span {
     align-items: center;
     padding: 2rem 7% 0;
     height: 100vh;
+    background-image: url(/assets/images/coffiebg.png);
+    background-repeat: no-repeat;
+    background-position: 80% 40%;
+    background-size: 40rem;
 }
 
 .home .home-content {
@@ -220,109 +228,36 @@ span {
     transition: .5 ease;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
+    outline: none;
     background: var(--white-color);
     color: var(--main-color);
     border-color: var(--main-color);
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    background: var(--text-color);
+}
+
+.success,
+.error {
+    text-align: center;
+}
+
+.success {
+    color: var(--main-color);
+}
+
+.error {
+    color: tomato;
 }
 
 .btn i {
     margin-left: .6rem;
     font-size: 1rem;
 }
-
-/* .home .animation-container {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 46rem;
-    height: 46rem;
-    overflow: hidden;
-    background-color: #1A237E;
-}
-
-.home .animation-container .animation-box {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: yellowgreen;
-    border-radius: 50%;
-}
-
-.home .animation-container .animation-box .animation {
-    font-size: 2.8rem;
-    font-weight: 300;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.home .animation-container .animation-box .animation span {
-    position: relative;
-}
-
-.home .animation-container .animation-box .animation span::before {
-    content: "";
-    color: #0F1314;
-    animation: text-decoration 20s infinite;
-}
-
-.home .animation-container .animation-box .animation span::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    right: -10px;
-    animation: infinite-cursor .8s infinite, switch-off 20s steps(15) infinite;
-    width: calc(100% + 8px);
-    background-color: yellowgreen;
-}
-
-@keyframes text-decoration {
-
-    0%,
-    33% {
-        content: "Developer FrontEnd";
-    }
-
-    34%,
-    66% {
-        content: "UI Designer";
-    }
-
-    67%,
-    100% {
-        content: "Criativo";
-    }
-}
-
-@keyframes infinite-cursor {
-
-    0% {
-        border-left: .2rem solid yellowgreen;
-    }
-}
-
-@keyframes switch-off {
-
-    10%,
-    30%,
-    65%,
-    95% {
-        width: 0;
-    }
-
-    0%,
-    20%,
-    50%,
-    100% {
-        width: calc(100% + 8px);
-    }
-} */
 
 .about {
     display: flex;
@@ -432,7 +367,7 @@ span {
 
 .portfolio-box img {
     width: 100%;
-    transition: .5s ease;
+    transition: .9s ease;
 }
 
 .portfolio-box:hover img {
@@ -470,19 +405,34 @@ span {
     margin: .3rem 0 .8rem;
 }
 
-.portfolio-layer a {
+.portfolio-box .portfolio-layer a {
     display: inline-flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 2rem;
     height: 2rem;
-    background: var(--white-color);
-    border-radius: 50%;
 }
 
-.portfolio-layer a i {
-    font-size: 1.2rem;
-    color: #333;
+.portfolio-box .portfolio-layer .technology i {
+    margin-bottom: 1rem;
+    color: var(--white-color);
+    font-size: 1.8rem;
+    opacity: .8;
+}
+
+.portfolio-box .portfolio-layer .external a {
+    background-color: var(--white-color);
+    border-radius: 50%;
+    margin-left: .5rem;
+}
+
+.portfolio-box .portfolio-layer .external a:hover {
+    opacity: .8;
+}
+
+.portfolio-box .portfolio-layer .external a i {
+    font-size: 1.4rem;
 }
 
 .contact h2 {
@@ -662,7 +612,11 @@ footer p {
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1026px) {
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
     .header {
         padding: 2rem 1%;
     }
@@ -672,23 +626,34 @@ footer p {
         font-size: .8rem;
     }
 
-    section {
-        padding: 10rem 3% 2rem;
+    .home {
+        background-image: none;
+        position: relative;
     }
 
-    .home .profession-container .portfolio-box {
-        right: -22rem;
+    .home::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url(/assets/images/coffiebg.png);
+        background-repeat: no-repeat;
+        background-position: 80% 40%;
+        background-size: 40rem;
+        z-index: -1;
+        opacity: .5;
     }
 
-    .home .profession-container .overlay {
-        right: -15rem;
-    }
 }
 
 @media (max-width: 991px) {
 
     .header {
         padding: 2rem 3%;
+    }
+
+    .home::before {
+        background-position: 50% 40%;
+        background-size: 50rem;
     }
 
     .navbar a {
@@ -731,7 +696,7 @@ footer p {
 
 }
 
-@media (max-width: 769px) {
+@media (max-width: 770px) {
 
     .html {
         font-size: 50%;
@@ -796,6 +761,11 @@ footer p {
     .home {
         justify-content: center;
         text-align: center;
+    }
+
+    .home::before {
+        background-position: 90% 10%;
+        background-size: 30rem;
     }
 
     .home-content h3 {
@@ -871,6 +841,8 @@ footer p {
         width: 100%;
     }
 
+
+
     #menu-icon {
         display: block;
     }
@@ -924,6 +896,12 @@ footer p {
         text-align: center;
     }
 
+    .home::before {
+        background-position: 10% 100%;
+        background-size: 20rem;
+        opacity: 0.5;
+    }
+
     .home-content h3 {
         font-size: 1.8rem;
     }
@@ -964,7 +942,7 @@ footer p {
 
     .separador {
         left: 0;
-        top: 350px;
+        top: 380px;
     }
 
     .services h2,
@@ -989,7 +967,7 @@ footer p {
     }
 
     .header {
-        padding-top: 6rem;
+        padding-top: 2rem;
     }
 
     .separador {
@@ -1039,13 +1017,23 @@ footer p {
 
 }
 
-@media (max-width: 412px) {
+@media (max-width: 417px) {
+
+    .home {
+        padding: 4rem 3% 15rem;
+    }
+
     section {
-        max-width: 412px;
+        max-width: 414px;
+    }
+
+    .home::before {
+        background-position: 50% 100%;
+        background-size: 35rem;
     }
 
     footer {
-        max-width: 412px;
+        max-width: 414px;
     }
 
     .separador {
@@ -1054,10 +1042,18 @@ footer p {
     }
 }
 
-@media (max-width: 375px) {
-
+@media (max-width: 377px) {
     section {
         max-width: 375px;
+    }
+
+    .home {
+        padding: 0 3% 15rem;
+    }
+
+    .home::before {
+        background-position: 10% 100%;
+        background-size: 35rem;
     }
 
     .about-img {
@@ -1067,4 +1063,9 @@ footer p {
     footer {
         max-width: 375px;
     }
+
+    footer p {
+        padding-left: 2rem;
+    }
+
 }
