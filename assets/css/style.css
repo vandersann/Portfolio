@@ -63,6 +63,7 @@ section {
     font-size: 1.4rem;
     cursor: pointer;
     color: var(--text-color);
+    margin-right: 1rem;
 }
 
 .dark-mode .logo {
@@ -78,6 +79,7 @@ section {
     font-size: 1.3rem;
     color: var(--text-color);
     display: none;
+    margin-right: 1rem;
 }
 
 .header img {
@@ -597,19 +599,6 @@ footer p {
         margin-right: 20rem;
     }
 
-    .home .profession-container {
-        height: 85.5 rem;
-    }
-
-    .home .profession-container .portfolio-box {
-        right: -12rem;
-        height: 85.8rem;
-    }
-
-    .home .profession-container .overlay {
-        right: -9rem;
-    }
-
 }
 
 @media (max-width: 1026px) {
@@ -698,19 +687,19 @@ footer p {
 
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
 
     .html {
         font-size: 50%;
     }
 
     section {
-        max-width: 769px;
+        max-width: 768px;
     }
 
     .header {
         font-size: 1rem;
-        max-width: 770px;
+        max-width: 768px;
     }
 
     #menu-icon {
@@ -1037,6 +1026,9 @@ footer p {
 
     .home {
         padding: 4rem 3% 15rem;
+    }
+
+    .header {
         max-width: 417px;
     }
 
@@ -1066,6 +1058,9 @@ footer p {
 
     .home {
         padding: 0 3% 15rem;
+    }
+
+    .header {
         max-width: 377px;
     }
 
