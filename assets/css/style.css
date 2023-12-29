@@ -619,6 +619,7 @@ footer p {
 
     .header {
         padding: 2rem 1%;
+        max-width: 1026px;
     }
 
     .logo {
@@ -649,6 +650,7 @@ footer p {
 
     .header {
         padding: 2rem 3%;
+        max-width: 991px;
     }
 
     .home::before {
@@ -708,7 +710,7 @@ footer p {
 
     .header {
         font-size: 1rem;
-        width: 100%;
+        max-width: 770px;
     }
 
     #menu-icon {
@@ -838,7 +840,7 @@ footer p {
 
     .header {
         font-size: 1rem;
-        width: 100%;
+        max-width: 738px;
     }
 
 
@@ -968,6 +970,7 @@ footer p {
 
     .header {
         padding-top: 2rem;
+        max-width: 617px;
     }
 
     .home::before {
@@ -988,6 +991,10 @@ footer p {
 
     html {
         font-size: 60%;
+    }
+
+    .header {
+        max-width: 449px;
     }
 
     section {
@@ -1030,6 +1037,7 @@ footer p {
 
     .home {
         padding: 4rem 3% 15rem;
+        max-width: 417px;
     }
 
     section {
@@ -1047,7 +1055,7 @@ footer p {
 
     .separador {
         left: 1rem;
-        top: 50rem;
+        top: 55rem;
     }
 }
 
@@ -1058,6 +1066,7 @@ footer p {
 
     .home {
         padding: 0 3% 15rem;
+        max-width: 377px;
     }
 
     .home::before {
