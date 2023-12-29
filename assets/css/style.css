@@ -591,10 +591,6 @@ footer p {
 
 @media (max-width: 1200px) {
 
-    html {
-        font-size: 55%;
-    }
-
     .header {
         max-width: 1200px;
     }
@@ -605,7 +601,7 @@ footer p {
 
     .header {
         padding: 2rem 3%;
-        max-width: 1024px;
+        max-width: 1026px;
     }
 
     section {
@@ -615,6 +611,11 @@ footer p {
 }
 
 @media (max-width: 991px) {
+
+    html {
+        font-size: 55%;
+    }
+
 
     .header {
         max-width: 991px;
