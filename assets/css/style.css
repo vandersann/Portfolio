@@ -970,7 +970,12 @@ footer p {
         padding-top: 2rem;
     }
 
+    .home::before {
+        background-position: 50% 120%;
+    }
+
     .separador {
+        bottom: 50px;
         left: 19px;
     }
 
@@ -979,7 +984,7 @@ footer p {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 449px) {
 
     html {
         font-size: 60%;
@@ -991,6 +996,10 @@ footer p {
 
     .home {
         padding: 15rem 3% 15rem;
+    }
+
+    .home::before {
+        background-position: 50% 80%;
     }
 
     .separador {
