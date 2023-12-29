@@ -21,6 +21,7 @@
 
 * A aplicação foi feita utilizando:
   <img src="https://user-images.githubusercontent.com/65673565/197231139-6dfa8431-458c-413e-89e8-972e1ab811d8.svg" width="20" height="20">
+   <img src="https://user-images.githubusercontent.com/65673565/197238275-388aa7ce-f0ab-4d23-96f1-c89bccb4cb90.svg" width="20" height="20">
   <img src="https://user-images.githubusercontent.com/65673565/197238032-ca4fa2b6-d812-4e4c-b273-e17b04aaabbf.svg" width="20" height="20">
 
 * Toda aplicação foi criada no sitema operacional `Windows 11`
@@ -38,4 +39,4 @@ Esse projeto está sob licença. Veja o arquivo <kbd>[MIT](Mit.md)</kbd> para ma
   <img witdh="300" src="https://user-images.githubusercontent.com/65673565/190916838-46057236-9d6e-4e75-b919-d24f673caec7.svg" alt="logo do criador do projeto")
  </p>
   
-  **[⬆ voltar ao topo](#Jogo_da_Memoria)**
+  **[⬆ voltar ao topo](#Portfolio)**
