@@ -28,7 +28,7 @@
 
 ## :man_technologist: Acessando o projeto
 
-Para acessar o projeto é fácil: <a href="https://benevolent-cupcake-333c2f.netlify.app" target="_blank"><kbd>click aqui</kbd></a> ou aponte seu celular | <img src="/assets/images/qrCode.png" height="125" width="125" alt="apresentacao do site">
+Para acessar o projeto é fácil: <a href="sandino.netlify.app" target="_blank"><kbd>click aqui</kbd></a> ou aponte seu celular | <img src="/assets/images/qrCode.png" height="125" width="125" alt="apresentacao do site">
 :--------- | :---------
 
 ## 📝 Licença
