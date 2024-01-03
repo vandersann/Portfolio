@@ -910,8 +910,8 @@ footer p {
     }
 
     .home::before {
-        background-position: 80% 20%;
-        background-size: 30rem;
+        background-position: 80% 30%;
+        background-size: 25rem;
     }
 
     section {
@@ -927,9 +927,25 @@ footer p {
         width: 60vw;
     }
 
+    .about-content p {
+        font-size: 2rem;
+    }
+
     .services .services-container {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .services-box h3 {
+        font-size: 2rem;
+    }
+
+    .services-box p {
+        font-size: 1.6rem;
+    }
+
+    .services-box .services-skills i {
+        font-size: 3rem;
     }
 
     footer {
