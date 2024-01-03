@@ -604,6 +604,31 @@ footer p {
         max-width: 1026px;
     }
 
+    .home {
+        background-image: none;
+        position: relative;
+    }
+
+    .home::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url(/assets/images/coffiebg.png);
+        background-repeat: no-repeat;
+        background-position: 80% 40%;
+        background-size: 40rem;
+        z-index: -1;
+        opacity: 1;
+    }
+
+    .navbar a {
+        font-size: 1.6rem;
+    }
+
+    #darkMode-icon {
+        font-size: 1.6rem;
+    }
+
     section {
         padding: 10rem 3% 2rem;
     }
@@ -612,17 +637,53 @@ footer p {
 
 @media (max-width: 991px) {
 
-    html {
-        font-size: 55%;
-    }
-
-
     .header {
         max-width: 991px;
     }
 
+    .home::before {
+        z-index: 1;
+        background-position: 100% 40%;
+        background-size: 35rem;
+    }
+
     .home .home-content {
         max-width: 50rem;
+    }
+
+    .home h1,
+    h3 {
+        font-size: 4.5rem;
+    }
+
+    .home .home-content .profession .text {
+        font-size: 3.5rem;
+    }
+
+    .home-content .social-media a {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+    }
+
+    .navbar a {
+        font-size: 1.7rem;
+    }
+
+    #darkMode-icon {
+        font-size: 1.8rem;
+    }
+
+    .heading {
+        margin-bottom: 2.5rem;
+    }
+
+    .about-content p {
+        font-size: 1.4rem;
     }
 
     .services,
@@ -641,6 +702,10 @@ footer p {
 }
 
 @media (max-width: 769px) {
+
+    html {
+        font-size: 55%;
+    }
 
     .header {
         max-width: 769px;
@@ -697,6 +762,12 @@ footer p {
         text-align: center;
     }
 
+    .home::before {
+        z-index: -1;
+        background-position: 50% 80%;
+        background-size: 30rem;
+    }
+
     .home-content h3 {
         font-size: 2.6rem;
     }
@@ -707,6 +778,11 @@ footer p {
 
     .home-content .social-media a {
         margin: 2, 5rem .75rem 3rem;
+    }
+
+    .separador {
+        left: 0;
+        bottom: 40%;
     }
 
     .about {
@@ -795,20 +871,69 @@ footer p {
         padding: 38rem 3% 30rem;
     }
 
+    .home::before {
+        background-position: 80% 20%;
+        background-size: 20rem;
+    }
+
     .contact form .input-box input {
         width: 100%;
+    }
+
+    .separador {
+        left: 0;
+        bottom: 8%;
     }
 }
 
 @media (max-width: 367px) {
 
+    html {
+        font-size: 40%;
+    }
+
     .header {
-        max-width: 367px;
         padding: 2rem 2%;
+        max-width: 367px;
+    }
+
+    .home {
+        max-width: 367px;
+    }
+
+    .home .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home .home-content .profession .text {
+        font-size: 2rem;
+    }
+
+    .home::before {
+        background-position: 80% 20%;
+        background-size: 30rem;
+    }
+
+    section {
+        max-width: 367px;
+    }
+
+    .separador {
+        left: 0;
+        bottom: 25%;
     }
 
     .about-image img {
-        width: 90vw;
+        width: 60vw;
+    }
+
+    .services .services-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        max-width: 365px;
     }
 
     footer p {

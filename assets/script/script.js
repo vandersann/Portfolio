@@ -82,7 +82,7 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading', {
     origin: 'top'
 });
-ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', {
+ScrollReveal().reveal('.services-container, .portfolio-box, .forms', {
     origin: 'bottom'
 });
 ScrollReveal().reveal('.home-content h1, .about-image img', {
