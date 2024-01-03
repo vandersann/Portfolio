@@ -928,6 +928,11 @@ footer p {
         font-size: 40%;
     }
 
+    .home::before {
+        background-position: 80% 20%;
+        background-size: 30rem;
+    }
+
     .header {
         max-width: 376px;
     }
@@ -941,8 +946,34 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .services .services-box h3 {
+        font-size: 2rem;
+    }
+
+    .services-box .services-skills i {
+        font-size: 3rem;
+    }
+
+    .services .services-box p {
+        font-size: 1.6rem;
+    }
+
     .about-image img {
         width: 60vw;
+    }
+
+    .about-content p {
+        font-size: 1.8rem;
+    }
+
+    .contact form .input-box input,
+    .contact form textarea {
+        font-size: 1.6rem;
+    }
+
+    .separador {
+        left: 0;
+        bottom: 25%;
     }
 
     footer p {
