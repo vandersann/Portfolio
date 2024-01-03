@@ -957,3 +957,17 @@ footer p {
     }
 
 }
+
+@media (max-width: 281px) {
+    .header {
+        max-width: 281px;
+    }
+
+    section {
+        max-width: 281px;
+    }
+
+    .home {
+        max-width: 281px;
+    }
+}
