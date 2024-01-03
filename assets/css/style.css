@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    min-width: 100vh;
+    min-width: auto;
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
@@ -969,5 +969,9 @@ footer p {
 
     .home {
         max-width: 281px;
+    }
+
+    .home .home-content .profession .text {
+        font-size: 1.9rem;
     }
 }
