@@ -134,6 +134,21 @@ span {
     background-repeat: no-repeat;
     background-position: 80% 40%;
     background-size: 40rem;
+    animation: fundoAnimado 20s linear infinite;
+}
+
+@keyframes fundoAnimado {
+    0% {
+        background-position: 50% 30%;
+    }
+
+    50% {
+        background-position: 80% 20%;
+    }
+
+    100% {
+        background-position: 50% 30%;
+    }
 }
 
 .home .home-content {
